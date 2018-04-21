@@ -25,5 +25,26 @@ app.listen(port);
 // Log the server status to the console
 console.log('Server running at http://localhost:3000/');
 
+
+
+function normalizePort(val) {
+    let port = parseInt(val, 10);
+  
+    if (isNaN(port)) {
+      // named pipe
+      return val;
+    }
+  
+    if (port >= 0) {
+      // port number
+      return port;
+    }
+  
+    return false;
+  }
+  
+
+
+
 // Use the module.exports property to expose our Express application instance for external usage
 module.exports = app;
