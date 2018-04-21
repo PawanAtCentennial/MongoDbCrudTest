@@ -31,5 +31,13 @@
   "description": "",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawanAtCentennial/MongoDbCrudTest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PawanAtCentennial/MongoDbCrudTest/issues"
+  },
+  "homepage": "https://github.com/PawanAtCentennial/MongoDbCrudTest#readme"
 }
