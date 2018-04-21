@@ -13,11 +13,14 @@ const db = configureMongoose();
 // Create a new Express application instance
 const app = configureExpress();
 
+let port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
 // Configure the Passport middleware
 const passport = configurePassport();
 
 // Use the Express application instance to listen to the '3000' port
-app.listen(3000);
+app.listen(port);
 
 // Log the server status to the console
 console.log('Server running at http://localhost:3000/');
