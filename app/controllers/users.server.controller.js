@@ -273,7 +273,7 @@ exports.userByUsername = function (req, res, next) {
                     res.status(400).send(err);
                 } else {
                     console.log("Successful login *********************************beerey ");
-                    res.render('ThankYouProject', { title: 'Patient Logged In'});
+                    res.render('thankYou', { title: 'Patient Logged In'});
 
                     //res.json(user);
                 }

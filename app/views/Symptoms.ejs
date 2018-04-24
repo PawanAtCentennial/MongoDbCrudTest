@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button1").click(function(){
+        var div = $("div"); 
+        alert('Heart Attack');
+    });
+});
+</script> 
+</head>
+<body>
+    <div style="width:100%; text-align:center">
+        <table>
+            <tr>
+                <td>
+                    Headache:
+                </td>
+                <td>
+                    <input type="checkbox" id="Headache">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Breath Shorness:
+                </td>
+                <td>
+                    <input type="checkbox" id="Breathshorness">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Coug:
+                </td>
+                <td>
+                    <input type="checkbox" id="Coug">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dizziness:
+                </td>
+                <td>
+                    <input type="checkbox" id="Dizziness">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Vomiting:
+                </td>
+                <td>
+                    <input type="checkbox" id="Vomiting">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Constipation:
+                </td>
+                <td>
+                    <input type="checkbox" id="Constipation">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chest Pain:
+                </td>
+                <td>
+                    <input type="checkbox" id="Chestpain">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Swelling:
+                </td>
+                <td>
+                    <input type="checkbox" id="Swelling">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sneezing:
+                </td>
+                <td>
+                    <input type="checkbox" id="Sneezing">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <br/>
+    <button onclick="myFunction()">Check for Disease</button>
+    <script>
+        function myFunction() {
+            var H, B, C, D, SZ, V, Cons, Chest, S;
+            if (document.getElementById("Headache").checked == true)
+                H = true;
+            if (document.getElementById("Breathshorness").checked == true)
+                B = true;
+            if (document.getElementById("Coug").checked == true)
+                C = true;
+            if (document.getElementById("Sneezing").checked == true)
+                SZ = true;
+            if (document.getElementById("Dizziness").checked == true)
+                D = true;
+            if (document.getElementById("Vomiting").checked == true)
+                V = true;
+            if (document.getElementById("Constipation").checked == true)
+                Cons = true;
+            if (document.getElementById("Chestpain").checked == true)
+                Chest = true;
+            if (document.getElementById("Swelling").checked == true)
+                S = true;
+            if (H == B == C == D == V == Cons == Chest == S == true)
+                alert('Your are going to die! Fuck You! (,,|,,)');
+            else if (SZ == Chest == true)
+                alert('Cold...Please wear jacket outdoors');
+            else if (V == Cons == true)
+                alert('Pet Kharab...Please eat Azwan');
+            else if (D == V == H == true)
+                alert('Headache Problem!');
+            else if (B == Chest == true)
+                alert('Heart Attack Alert... Please Take Sexy Cardio');
+
+        }
+    </script>
+
+
+
+</body>
+</html>

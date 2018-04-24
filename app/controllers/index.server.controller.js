@@ -4,6 +4,20 @@ const VitalSigns = require('mongoose').model('VitalSigns');
 const bodyParser = require('body-parser');
 
 
+
+exports.renderSymptoms = function (req, res) {
+    res.render('Symptoms', {
+        title: 'SEE THE Symptoms'
+    }); 
+
+        }
+    
+   
+
+
+
+
+
 exports.rendertEST = function (req, res) {
 
     var patientName = req.body.patient;
@@ -19,11 +33,11 @@ exports.rendertEST = function (req, res) {
             // Use the 'response' object to send a JSON response
             console.log('sign obj***** is');
 
-            /* res.render('index', {
+            res.render('ThankYouProject', {
                 title: 'SEE THE LOGS'
-            }); */
+            }); 
 
-            res.json(signs);
+            //res.json(signs);
 
         }
     });
