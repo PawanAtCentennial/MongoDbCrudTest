@@ -1,76 +1,100 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
+
 <head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Welcome To Our <%= title %></title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="OP Registration Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script>
+        var check = function () {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('message').style.color = 'green';
+                document.getElementById('message').innerHTML = 'matching';
+                alert('matching passwords');
+            } else {
+                // document.getElementById('message').style.color = 'red';
+                // document.getElementById('message').innerHTML = 'not matching';
+                alert('not matching passwords');
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
- 
-   background-size:cover;
+            }
+        }
+    </script>
 
-}
-.container {
-    border-radius: 5px;
-    background-color: skyblue;
-    padding: 20px;
-}
-</style>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tags -->
+    <!-- Stylesheet -->
+    <!-- <link rel="stylesheet" href="../public/css/jquery-ui.css" type="text/html"/>
+    <link href="../public/css/styleNurseSignup.css" rel='stylesheet' type="text/html"/> -->
+
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+
+    <!-- //Stylesheet -->
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+    <!--//fonts-->
 </head>
 
-<body>
+<body style="background: url(img/banner.jpg)no-repeat center top;">
+	<!--background-->
+	<h1>Nurse Registration Form </h1>
+	<div class="register-form-w3layouts">
+		<!-- Form starts here -->
+		<form action="/read_nurse" method="post">
+			<h3 class="sub-heading-agileits">Personal Details</h3>
+			
+			<div class="main-flex-w3ls-sectns">
+				<div class="field-agileinfo-spc form-w3-agile-text1">
+					<input type="email" name="email" placeholder="Enter Email" required="">
+				</div>
+				<div class="field-agileinfo-spc form-w3-agile-text2">
+					<input type="text" id="password" name="password" placeholder="Enter password" required="">
+				</div>
+			</div>
+						
+			<input type="submit" value="Submit">
+			<input type="reset" value="Clear Form">
+			<div class="clear"></div>
+		</form>
+		<!--// Form starts here -->
+	</div>
+	<!--copyright-->
+	<div class="copyright">
+		<p>&copy; 2018. emerging technologies . All Rights Reserved | Design by team dare devils
+			
+		</p>
+	</div>
+	<!--//copyright-->
+	<!--
+	<script
+  src="https://code.jquery.com/jquery-2.2.3.min.js"
+  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+  crossorigin="anonymous"></script>
+	<!-- Calendar Js -->
+	<script
+  src="http://code.jquery.com/ui/1.8.0/jquery-ui.min.js"
+  integrity="sha256-i1lZLWfq3HA69s3Vuo0Hf5+UhdAftkBVVWFDNfib6Zs="
+  crossorigin="anonymous"></script> -->
 
-
-
-
-
-<div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-auto">
-       <h1>Welcome To Our <%= title %></h1>
-	 
-	 <div class="container">
-      <div class="row">
-        <div class="col-md-offset-18 col-md-18">
-
-	   <form action="/read_nurse" method="post">
- 
-
-  
-
-   <div class="input-group mb-3">
-   <div class="input-group-prepend">
-    <label class="input-group-text" for="Email">Username</label>
-   </div>
-  
-    <input type="email" class="form-control" size="30" id="Email" name="email" placeholder="Enter your email" required >
-</div>
-
- <div class="input-group mb-3">
- <div class="input-group-prepend">
-  <label class="input-group-text" for="password">password</label>
-  </div>
-    <input type="password" class="form-control" size="30" id="password" name="password" placeholder="Enter your password" required >
-</div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-      </div>
-    </div>
-  </div>
-  </div>
-    </div>
-  </div>
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- Calendar Js -->
+	<script src="js/jquery-ui.js"></script>
+	
+	<!-- //Calendar Js -->
 
 </body>
 
 </html>
-
-
-
-
-

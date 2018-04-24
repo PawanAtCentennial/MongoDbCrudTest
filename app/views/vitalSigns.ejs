@@ -8,14 +8,15 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
- 
+ background-image: url("https://az616578.vo.msecnd.net/files/2016/09/13/636093360184964585-672926054_nurse1.jpg");
    background-size:cover;
 
 }
-.container {
+.codntainer {
     border-radius: 5px;
     background-color: skyblue;
     padding: 20px;
+	
 }
 </style>
 
@@ -28,9 +29,10 @@ body {
 
 
 <div class="container">
+<br/><br/><br/><br/>
     <div class="row justify-content-md-center">
       <div class="col-md-auto">
-       <h1>Welcome To Our <%= title %></h1>
+       <h1><%= title %></h1>
 	 
 	 <div class="container">
       <div class="row">
@@ -70,7 +72,7 @@ body {
    <div class="input-group-prepend">
     <label class="input-group-text" for="patient">Patient Name</label>
    </div>
-  <select class="selectpicker" data-style="btn-info" name="patient">
+  <select style="width:310px;"  class="selectpicker" data-style="btn-info" name="patient">
         <optgroup label="Select Table">
 
 
