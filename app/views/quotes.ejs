@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Quotes</title>
+    <style>
+        div {
+            margin-bottom: 15px;
+            padding: 4px 12px;
+        }
+        .info {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="info">
+        <p><strong>Todays Quote!</strong> <h3 id="quote">quotes</h3></p>
+    </div>
+    
+    <script>
+        (function () {
+
+            var quotes = [
+                "An apple a day keeps doctors away!",
+                "Tough times never last, but tough people do!",
+                "If you constantly think of illness, you eventually become ill; if you believe yourself beautiful you become so!",
+                "Victory is always possible for the person who refuses to stop fighting.",
+                "Life is not about waiting for the strom to pass, its about learning to dance in the rain!",
+                "Keep your head up. God gives hardest battles to strongest solders.",
+                "The world is round and the place which may seem like the end may also be the beginning!"
+            ];
+            var d = new Date();
+            var n = d.getDay();
+            var quote = quotes[n];
+            document.getElementById("quote").innerHTML = quote;
+        })();
+    </script>
+
+</body>
+</html>

@@ -5,6 +5,20 @@ const bodyParser = require('body-parser');
 
 
 
+exports.renderZumba = function (req, res) {
+    res.render('zumba', {
+        title: 'SEE Workout'
+    }); 
+
+        }
+
+exports.renderQuotes = function (req, res) {
+    res.render('quotes', {
+        title: 'SEE THE quotes'
+    }); 
+
+        }
+
 exports.renderSymptoms = function (req, res) {
     res.render('Symptoms', {
         title: 'SEE THE Symptoms'

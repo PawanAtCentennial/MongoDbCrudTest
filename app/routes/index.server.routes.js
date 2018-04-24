@@ -9,8 +9,10 @@ module.exports = function(app) {
    // app.get('/add_user', index.renderAddUser);
     //renders read_user.ejs if a get request is made to /read_user path
   //  app.get('/read_user', index.renderReadUser);
- // /display/symptoms
-
+ // /display/symptoms   /display/quotes
+ 
+ app.get('/display/zumba', index.renderZumba);
+ app.get('/display/quotes', index.renderQuotes);
   app.get('/display/symptoms', index.renderSymptoms);
     app.get('/nurseSignup', index.renderNurseSignUp);
 

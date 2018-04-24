@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $("button1").click(function(){
-        var div = $("div"); 
-        alert('Heart Attack');
-    });
-});
-</script> 
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://static.dezeen.com/uploads/2017/02/sheffield-childrens-hospital-morag-myerscough-interior-design-uk_dezeen_2364_hero.gif");
+            background-size: cover;
+        }
+
+        .codntainer {
+            border-radius: 5px;
+            background-color: skyblue;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button1").click(function () {
+                var div = $("div");
+                alert('Heart Attack');
+            });
+        });
+    </script>
 </head>
 <body>
-    <div style="width:100%; text-align:center">
-        <table>
-            <tr>
-                <td>
-                    Headache:
-                </td>
-                <td>
-                    <input type="checkbox" id="Headache">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Breath Shorness:
-                </td>
-                <td>
-                    <input type="checkbox" id="Breathshorness">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Coug:
-                </td>
-                <td>
-                    <input type="checkbox" id="Coug">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Dizziness:
-                </td>
-                <td>
-                    <input type="checkbox" id="Dizziness">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Vomiting:
-                </td>
-                <td>
-                    <input type="checkbox" id="Vomiting">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Constipation:
-                </td>
-                <td>
-                    <input type="checkbox" id="Constipation">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Chest Pain:
-                </td>
-                <td>
-                    <input type="checkbox" id="Chestpain">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Swelling:
-                </td>
-                <td>
-                    <input type="checkbox" id="Swelling">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Sneezing:
-                </td>
-                <td>
-                    <input type="checkbox" id="Sneezing">
-                </td>
-            </tr>
-        </table>
+
+    <div  class="container" style="width:25%; text-align:center">
+        <br/>
+        <br/>
+        <strong>
+            <table class="table">
+                <tr><td><h1>Symptoms Test</h1></td></tr>
+                <tr class="active">
+                    <td>
+                        Headache:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Headache">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Breath Shorness:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Breathshorness">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Coug:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Coug">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Dizziness:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Dizziness">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Vomiting:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Vomiting">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Constipation:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Constipation">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Chest Pain:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Chestpain">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Swelling:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Swelling">
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        Sneezing:
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Sneezing">
+                    </td>
+                </tr>
+                <tr><td><button class="btn btn-primary btn-sl" onclick="myFunction()">Check for Disease</button></td></tr>
+            </table>
+        </strong>
     </div>
     <br/>
     <br/>
-    <button onclick="myFunction()">Check for Disease</button>
+    
     <script>
         function myFunction() {
             var H, B, C, D, SZ, V, Cons, Chest, S;
@@ -113,7 +141,7 @@ $(document).ready(function(){
             if (document.getElementById("Swelling").checked == true)
                 S = true;
             if (H == B == C == D == V == Cons == Chest == S == true)
-                alert('Your are going to die! Fuck You! (,,|,,)');
+                alert('Your are going to die!');
             else if (SZ == Chest == true)
                 alert('Cold...Please wear jacket outdoors');
             else if (V == Cons == true)
@@ -121,7 +149,7 @@ $(document).ready(function(){
             else if (D == V == H == true)
                 alert('Headache Problem!');
             else if (B == Chest == true)
-                alert('Heart Attack Alert... Please Take Sexy Cardio');
+                alert('Heart Attack Alert... Please Take  Cardio');
 
         }
     </script>
